@@ -1,0 +1,113 @@
+.jqueryslidemenu{
+font: bold 12px Arial, Verdana, Helvetica, sans-serif;
+width: 100%;
+background-color: #B9D3EE;
+background: url(../images/nav-bg.gif) repeat-x left top;
+/*height:30px;*/
+}
+
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: block;
+color: #FFF;
+padding: 8px 11px;
+/*color: #2d2b2b;*/    /* changed as of 10 march'11 */
+text-decoration: none;
+background: #89231c;
+cursor:pointer;
+border-bottom: 2px solid #e6ac2b;
+}
+
+* html .jqueryslidemenu ul li a{              /*IE6 hack to get sub menu links to behave correctly*/ 
+display: block;
+}
+
+/*IE6 hack to get sub menu links to behave correctly*/ 
+
+/* html .jqueryslidemenu ul li a{              
+display: inline-block;
+}*/
+
+
+
+
+.jqueryslidemenu ul li a:hover{
+/* background-color: #6CA6CD; */  /*changed as on 10-march'11 */ /****tab link background during hover state****/
+
+cursor:pointer;
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li span{
+position: absolute;
+left: 0;
+display: none;
+margin-top:0.15px;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li span{
+display: none;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+margin:0px 0px 0px -40px;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li span a{
+display: list-item;
+font: normal 12px Arial, Verdana, Helvetica, sans-serif;
+background: #f5da92; /* Old browsers */
+	
+width: 150px;   /*width of sub menus*/
+/*width: 200px;*/ /*width of sub menus*/
+height:auto;
+padding: 5px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid #FFF;
+border-right: 1px solid #FFF;
+border-left: 1px solid #FFF;
+position:relative;
+color:#732214;
+}
+
+.jqueryslidemenuz ul li span a:hover{ /*sub menus hover style*/
+background: #6CA6CD;
+color: black;
+/*display: list-item;*/
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+/*padding-left: 165px;*/
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+/*padding-left: 165px;*/
+}
+
